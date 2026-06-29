@@ -13,7 +13,7 @@ const readline = require("readline")
 const { serialize, fetchJson, sleep, getBuffer } = require("./lib/myfunc");
 const { nocache, uncache } = require('./lib/chache.js');
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/Upload_Url')
-const usePairingCode = false;
+const usePairingCode = true;
 let welcome = JSON.parse(fs.readFileSync('./database/welcome.json'));
 const question = (text) => {
   const rl = readline.createInterface({
